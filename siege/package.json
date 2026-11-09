@@ -1,0 +1,13 @@
+{
+  "name": "siege",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Le Siège : bureau des agents, backlog Features / Bugs (local ou Notion) et pilotage d'une entreprise d'agents GitHub Copilot CLI.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js",
+    "backlog": "node backlog.js"
+  },
+  "engines": { "node": ">=18.17" }
+}

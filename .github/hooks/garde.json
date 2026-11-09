@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "_genere_par": "node siege/droits.js — ne pas modifier à la main",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "bash": "node siege/garde.js",
+        "powershell": "node siege\\garde.js",
+        "cwd": ".",
+        "timeoutSec": 20
+      }
+    ],
+    "SubagentStop": [
+      {
+        "type": "command",
+        "bash": "node siege/garde.js",
+        "powershell": "node siege\\garde.js",
+        "cwd": ".",
+        "timeoutSec": 20
+      }
+    ]
+  }
+}
